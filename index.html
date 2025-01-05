@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Assignments-project</title>
+  </head>
+  <body>
+    <main>
+      <section id="fitness-quiz-first-section">
+        <div class="fitness-quiz-first-section">
+          <div class="fitness-quiz-first-section-first-col">
+            <h3>Transform Your Figure</h3>
+            <div class="fitness-quiz-section-main-text-row">
+              <div class="fitness-quiz-section-main-text-row-first-col">
+                <h3>in Just</h3>
+              </div>
+              <div class="fitness-quiz-section-main-text-row-second-col">
+                <h3>7-Minutes a Day</h3>
+              </div>
+              <div class="fitness-quiz-section-main-text-row-third-col">
+                <h3>with One and Done</h3>
+              </div>
+            </div>
+            <h4>Take this 30-seconds quiz to find out how</h4>
+            <div class="fitness-quiz-links-womens-section">
+              <a href="#" id="women-link">Women Start Here</a>
+            </div>
+            <div class="fitness-quiz-links-mens-section">
+              <a href="#" id="men-link">Men Start Here</a>
+            </div>
+          </div>
+          <div class="fitness-quiz-first-section-second-col">
+            <img
+              src="../Demo-assignment-project/assets/img/MP34692_background_mer.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="fitness-quiz-section-section">
+          <img
+            src="../Demo-assignment-project/assets/img/Screenshot 2025-01-02 141032.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <div id="women-page" class="hidden">
+        <div class="women-page-fitness-container">
+          <div class="women-page-fitness-main-upper-section">
+            <div
+              class="fitness-quiz-women-page-fitness-main-upper-section-first-text"
+            >
+              <h3>Transform Your Figure</h3>
+              <div
+                class="fitness-quiz-women-page-fitness-main-upper-section-main-text-row"
+              >
+                <div
+                  class="fitness-quiz-women-page-fitness-main-upper-section-main-text-row-first-col"
+                >
+                  <h3>in Just</h3>
+                </div>
+                <div
+                  class="fitness-quiz-women-page-fitness-main-upper-section-main-text-row-second-col"
+                >
+                  <h3>7-Minutes a Day</h3>
+                </div>
+                <div
+                  class="fitness-quiz-women-page-fitness-main-upper-section-main-text-row-third-col"
+                >
+                  <h3>with One and Done</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fitness-quiz-progress-bar">
+            <div class="fitness-quiz-progress" id="progress"></div>
+          </div>
+
+          <div class="page active" id="page1">
+            <div class="age-selector">
+              <h1>What’s your age?</h1>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">Under 40</div>
+                <div class="option" onclick="selectOption(this)">Over 40</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page2">
+            <div class="age-selector">
+              <h1>How would you define your lifestyle?</h1>
+              <p>
+                (Did you know an average person walks about 900 miles per year)
+              </p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">Sedentary</div>
+                <div class="option" onclick="selectOption(this)">
+                  Moderately active
+                </div>
+                <div class="option" onclick="selectOption(this)">Active</div>
+                <div class="option" onclick="selectOption(this)">Varies</div>
+                <div class="option" onclick="selectOption(this)">
+                  Prefer not to say
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page3">
+            <div class="age-selector">
+              <h1>Do you think hours of cardio is beneficial for last loss?</h1>
+              <p>(Many people think doing cardio every day is the answer)</p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">Yes</div>
+                <div class="option" onclick="selectOption(this)">No</div>
+                <div class="option" onclick="selectOption(this)">Not sure</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page4">
+            <div class="age-selector">
+              <h1>
+                If there was a 7-minute routine to get you fit<br />
+                would you want to add it to your daily routine
+              </h1>
+              <p>
+                (Certain exercise routines can help ignite your metabolism for
+                faster for burn)
+              </p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  Definitely
+                </div>
+                <div class="option" onclick="selectOption(this)">Maybe</div>
+                <div class="option" onclick="selectOption(this)">Not sure</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page5">
+            <div class="age-selector">
+              <h1>What are your weight loss goals</h1>
+              <p>(Knowing your goals will keep you on track)</p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  I'd like to lose up to 10 pounds
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  I'd like to lose 10 to 20 pounds
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  I'd like to lose 20 to 50 pounds
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  I'd like to lose over 50 pounds
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page6">
+            <div class="age-selector">
+              <h1>How fast do you want to reach your goals?</h1>
+              <p>
+                (Make sure you have the help you need to get where you
+                want, when you want)
+              </p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  Within 14 days
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Within 1 month
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Within 2 months
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  I'm in no rush, as long as I get long-term results
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page7">
+            <div class="age-selector">
+              <h1>
+                How much 'workout time' do have each day to reach
+                your body goals?
+              </h1>
+              <p>(You need a solution that fits your lifestyle)</p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  Over one hour
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  30 minutes
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Under 10 minutes
+                </div>
+                <div class="option" onclick="selectOption(this)">Not sure</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page8">
+            <div class="age-selector">
+              <h1>What us a major concern when thinking about working out?</h1>
+              <p>(Make sure your solution is personalised to you)</p>
+              <p>(Select all that apply)</p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  Past or current injuries (back, shoulder, knees,
+                  ankles, muscle tear)
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Current medical, condition (heart disease, diabetes, kidney
+                  issues, arthritis, cancer, high blood pressure)
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Lack of time
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Lack of knowing what to do
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Last of motivation
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Lack of energy
+                </div>
+                <div class="option" onclick="selectOption(this)">Other</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page9">
+            <div class="age-selector">
+              <p>Please wait while we match you</p>
+              <p>With the best routine for maximum fat loss</p>
+              <div class="fitness-second-last-page-img-section">
+                <div class="fitness-second-last-page-img-section-first-img-col">
+                  <img src="./assets/img/MP34692_mer_images_3.jpg" alt="" />
+                </div>
+                <div
+                  class="fitness-second-last-page-img-section-second-img-col"
+                >
+                  <img
+                    src="./assets/img/Screenshot 2025-01-02 160722.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page9">
+            <div class="age-selector">
+              <p>Your ideal fat-burning routine has been calculated!</p>
+              <p>
+                Based on your answers, we've identified one simple method that
+                you can start doing TODAY <br />to help maximize results, in
+                minimal time!
+              </p>
+              <p>
+                Don't worry... it doesn't require long hours in the gym, running
+                miles on a treadmill, or some<br />
+                super intense cardio workout.
+              </p>
+              <p>
+                Instead, this little-known 'S.I.T. routine' can be done from the
+                convenience of home, using your<br />
+                body's own resistance, in just 7-minutes a day.
+              </p>
+              <p>
+                But here's the kicker: The special, hyper-focused movements have
+                the potential to burn fat<br />
+                hours later, even while you sleep!
+              </p>
+              <p>
+                In the free presentation below, world-renowned nutrition,
+                fitness, and weight-loss expert,<br />
+                Meredith Shirk, explains it all.
+              </p>
+              <p>
+                Discover the virtually foolproof way to finally melt off
+                stubborn fat, regardless of your age<br />
+                or activity level, revealing a thinner, leaner, more toned body
+                that you'll absolutely LOVE!
+              </p>
+              <p>
+                (This major metabolic breakthrough has already helped thousands
+                of women get the body of<br />
+                their dreams... and you could be next.)
+              </p>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button id="prev" class="btn-prev" disabled><i class="fa-solid fa-circle-left"></i></button>
+            <button id="next" class="btn-next"><i class="fa-solid fa-circle-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div id="men-page" class="hidden">
+        <div class="women-page-fitness-container">
+          <div class="women-page-fitness-main-upper-section">
+            <div
+              class="fitness-quiz-women-page-fitness-main-upper-section-first-text"
+            >
+              <h3>Transform Your Figure</h3>
+              <div
+                class="fitness-quiz-women-page-fitness-main-upper-section-main-text-row"
+              >
+                <div
+                  class="fitness-quiz-women-page-fitness-main-upper-section-main-text-row-first-col"
+                >
+                  <h3>in Just</h3>
+                </div>
+                <div
+                  class="fitness-quiz-women-page-fitness-main-upper-section-main-text-row-second-col"
+                >
+                  <h3>7-Minutes a Day</h3>
+                </div>
+                <div
+                  class="fitness-quiz-women-page-fitness-main-upper-section-main-text-row-third-col"
+                >
+                  <h3>with One and Done</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fitness-quiz-progress-bar">
+            <div class="fitness-quiz-progress" id="progress"></div>
+          </div>
+
+          <div class="page active" id="page1">
+            <div class="age-selector">
+              <h1>What’s your age?</h1>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">Under 40</div>
+                <div class="option" onclick="selectOption(this)">Over 40</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page2">
+            <div class="age-selector">
+              <h1>How would you define your lifestyle?</h1>
+              <p>
+                (Did you know an average person walks about 900 miles per year)
+              </p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">Sedentary</div>
+                <div class="option" onclick="selectOption(this)">
+                  Moderately active
+                </div>
+                <div class="option" onclick="selectOption(this)">Active</div>
+                <div class="option" onclick="selectOption(this)">Varies</div>
+                <div class="option" onclick="selectOption(this)">
+                  Prefer not to say
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page3">
+            <div class="age-selector">
+              <h1>Do you think hours of cardio is beneficial for last loss?</h1>
+              <p>(Many people think doing cardio every day is the answer)</p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">Yes</div>
+                <div class="option" onclick="selectOption(this)">No</div>
+                <div class="option" onclick="selectOption(this)">Not sure</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page4">
+            <div class="age-selector">
+              <h1>
+                If there was a 7-minute routine to get you fit<br />
+                would you want to add it to your daily routine
+              </h1>
+              <p>
+                (Certain exercise routines can help ignite your metabolism for
+                faster for burn)
+              </p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  Definitely
+                </div>
+                <div class="option" onclick="selectOption(this)">Maybe</div>
+                <div class="option" onclick="selectOption(this)">Not sure</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page5">
+            <div class="age-selector">
+              <h1>What are your weight loss goals</h1>
+              <p>(Knowing your goals will keep you on track)</p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  I'd like to lose up to 10 pounds
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  I'd like to lose 10 to 20 pounds
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  I'd like to lose 20 to 50 pounds
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  I'd like to lose over 50 pounds
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page6">
+            <div class="age-selector">
+              <h1>How fast do you want to reach your goals?</h1>
+              <p>
+                (Make sure you have the help you need to get where you
+                want, when you want)
+              </p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  Within 14 days
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Within 1 month
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Within 2 months
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  I'm in no rush, as long as I get long-term results
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page7">
+            <div class="age-selector">
+              <h1>
+                How much 'workout time' do have each day to reach
+                your body goals?
+              </h1>
+              <p>(You need a solution that fits your lifestyle)</p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  Over one hour
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  30 minutes
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Under 10 minutes
+                </div>
+                <div class="option" onclick="selectOption(this)">Not sure</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page8">
+            <div class="age-selector">
+              <h1>What us a major concern when thinking about working out?</h1>
+              <p>(Make sure your solution is personalised to you)</p>
+              <p>(Select all that apply)</p>
+              <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                  Past or current injuries (back, shoulder, knees,
+                  ankles, muscle tear)
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Current medical, condition (heart disease, diabetes, kidney
+                  issues, arthritis, cancer, high blood pressure)
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Lack of time
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Lack of knowing what to do
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Last of motivation
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                  Lack of energy
+                </div>
+                <div class="option" onclick="selectOption(this)">Other</div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page9">
+            <div class="age-selector">
+              <p>Please wait while we match you</p>
+              <p>With the best routine for maximum fat loss</p>
+              <div class="fitness-second-last-page-img-section">
+                <div class="fitness-second-last-page-img-section-first-img-col">
+                  <img src="./assets/img/MP34692_mer_images_3.jpg" alt="" />
+                </div>
+                <div
+                  class="fitness-second-last-page-img-section-second-img-col"
+                >
+                  <img
+                    src="./assets/img/Screenshot 2025-01-02 160722.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page9">
+            <div class="age-selector">
+              <p>Your ideal fat-burning routine has been calculated!</p>
+              <p>
+                Based on your answers, we've identified one simple method that
+                you can start doing TODAY <br />to help maximize results, in
+                minimal time!
+              </p>
+              <p>
+                Don't worry... it doesn't require long hours in the gym, running
+                miles on a treadmill, or some<br />
+                super intense cardio workout.
+              </p>
+              <p>
+                Instead, this little-known 'S.I.T. routine' can be done from the
+                convenience of home, using your<br />
+                body's own resistance, in just 7-minutes a day.
+              </p>
+              <p>
+                But here's the kicker: The special, hyper-focused movements have
+                the potential to burn fat<br />
+                hours later, even while you sleep!
+              </p>
+              <p>
+                In the free presentation below, world-renowned nutrition,
+                fitness, and weight-loss expert,<br />
+                Meredith Shirk, explains it all.
+              </p>
+              <p>
+                Discover the virtually foolproof way to finally melt off
+                stubborn fat, regardless of your age<br />
+                or activity level, revealing a thinner, leaner, more toned body
+                that you'll absolutely LOVE!
+              </p>
+              <p>
+                (This major metabolic breakthrough has already helped thousands
+                of women get the body of<br />
+                their dreams... and you could be next.)
+              </p>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button id="prev" class="btn-prev" disabled>Previous</button>
+            <button id="next" class="btn-next">Next</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
+

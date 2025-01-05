@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: Poppins, Sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#fitness-quiz-first-section {
+  background-image: url(../img/MP34692_background.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.fitness-quiz-first-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.fitness-quiz-first-section-first-col {
+  width: 100%;
+}
+
+.fitness-quiz-first-section-second-col {
+  width: 100%;
+  text-align: center;
+}
+
+.fitness-quiz-first-section-first-col h3 {
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.fitness-quiz-first-section-second-col img {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fitness-quiz-section-main-text-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fitness-quiz-section-main-text-row-first-col h3,
+.fitness-quiz-section-main-text-row-second-col h3,
+.fitness-quiz-section-main-text-row-third-col h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.fitness-quiz-first-section-first-col h4 {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+.fitness-quiz-links-womens-section,
+.fitness-quiz-links-mens-section {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fitness-quiz-links-womens-section a,
+.fitness-quiz-links-mens-section a {
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+.fitness-quiz-links-womens-section a {
+  background-color: rgb(199, 19, 73);
+}
+
+.fitness-quiz-links-mens-section a {
+  background-color: rgb(41, 155, 230);
+}
+
+.fitness-quiz-section-section {
+  width: 100%;
+  position: absolute;
+  margin-top: 20px;
+  bottom: -50px;
+  margin-top: 20px;
+}
+
+.fitness-quiz-section-section img {
+  width: 100%;
+}
+.fitness-quiz-section-main-text-row-second-col h3 {
+  color: #09abab;
+  font-weight: 600;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media (max-width: 600px) {
+
+  .fitness-quiz-section-section {
+    position: relative;
+    bottom: -248px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; 
+    z-index: 10; 
+  }
+  .fitness-quiz-links-womens-section {
+    position: relative;
+    bottom: -200px;
+  }
+  .fitness-quiz-links-mens-section {
+    position: relative;
+    bottom: -190px;
+  }
+  .fitness-quiz-first-section-first-col h3 {
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: -6px;
+
+    margin-top: 16px;
+
+  }
+  .fitness-quiz-first-section-first-col h4 {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 7px;
+color:black;
+}
+  .fitness-quiz-section-main-text-row-second-col h3 {
+    color: #09abab;
+    font-weight: 800;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 0px;
+}
+.fitness-quiz-section-main-text-row-first-col h3{
+  margin-top: 0px;
+}
+.fitness-quiz-section-main-text-row-third-col h3 {
+  margin-top: 0px;
+}
+#fitness-quiz-first-section {
+  background-image: url(../img/MP34692_i2_v4_m_q1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+  height: auto; 
+  background-color: transparent; /
+}
+
+.fitness-quiz-section-section img {
+  height: 36px;
+  margin-bottom: 263px;
+}
+.fitness-quiz-first-section-second-col img {
+  visibility: hidden; 
+  overflow: hidden;
+}
+.fitness-quiz-links-womens-section a,
+.fitness-quiz-links-mens-section a {
+  font-size: 18px;
+  padding: 11px 45px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+.fitness-quiz-first-section-second-col {
+  height: 0px;
+}
+
+}
+
+@media (min-width: 768px) {
+  .fitness-quiz-first-section {
+    flex-direction: row;
+  }
+
+  .fitness-quiz-first-section-first-col {
+    width: 60%;
+  }
+
+  .fitness-quiz-first-section-second-col {
+    width: 40%;
+  }
+
+  .fitness-quiz-first-section-first-col h3 {
+    font-size: 32px;
+    margin-top: 150px;
+  }
+  .fitness-quiz-section-main-text-row h3 {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .fitness-quiz-first-section-second-col img {
+    margin-left: 0;
+    width: 95%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fitness-quiz-first-section-first-col h3 {
+    font-size: 35px;
+    margin-top: 200px;
+    padding-top: 118px;
+  }
+
+  .fitness-quiz-first-section-second-col img {
+    width: 90%;
+    margin-left: -23px;
+  }
+  .fitness-quiz-section-main-text-row h3 {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .fitness-quiz-links-womens-section a,
+  .fitness-quiz-links-mens-section a {
+    font-size: 18px;
+    padding: 12px 50px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.fitness-quiz-first-section,
+#women-page,
+#men-page {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.women-page-fitness-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.progress-bar {
+  width: 18%;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-left: 41%;
+}
+.progress {
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(to right, #4facfe, #38f9d7);
+  transition: width 0.3s;
+}
+.page {
+  display: none;
+}
+.page.active {
+  display: block;
+}
+.buttons {
+  margin-top: 20px;
+}
+button {
+  font-size: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:disabled {
+  color: #4e4c4c;
+  cursor: not-allowed;
+}
+.btn-next {
+  color: #075ba4;
+  background-color: transparent;
+}
+.btn-prev {
+  color: #075ba4;
+  background-color: transparent;
+}
+
+.women-page-fitness-main-upper-section {
+  width: 100%;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.fitness-quiz-women-page-fitness-main-upper-section-first-text h3 {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: aliceblue;
+}
+.fitness-quiz-women-page-fitness-main-upper-section-main-text-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.fitness-quiz-women-page-fitness-main-upper-section-main-text-row-second-col
+  h3 {
+  color: white;
+  font-weight: 700;
+}
+
+.age-selector {
+  text-align: center;
+}
+
+.age-selector h1 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  color: #333;
+}
+
+.options {
+  width: 18%;
+  margin-left: 41%;
+}
+
+.option {
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.option:hover {
+  border-color: #007bff;
+}
+
+.option.selected {
+  background-color: #00c6ff;
+  color: white;
+  border-color: #00c6ff;
+  position: relative;
+}
+
+.option.selected::after {
+  content: "\2713";
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fitness-second-last-page-img-section {
+  width: 100%;
+  display: flex;
+}
+
+.fitness-second-last-page-img-section-first-img-col {
+  width: 36%;
+}
+
+.fitness-second-last-page-img-section-first-img-col img {
+  width: 70%;
+}
+.fitness-second-last-page-img-section-second-img-col {
+  width: 64%;
+}
+
+.fitness-second-last-page-img-section-second-img-col img {
+  width: 30%;
+  margin-left: -56%;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .fitness-quiz-women-page-fitness-main-upper-section-main-text-row{
+    width: auto;
+    display: ruby;
+  }
+  .fitness-quiz-women-page-fitness-main-upper-section-first-text h3{
+    font-size: 27px;
+  }
+  .options {
+    margin-left: 17%;
+}
+
+  .option {
+    width: 296%;
+
+  }
+  .fitness-second-last-page-img-section-first-img-col img{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .fitness-second-last-page-img-section-second-img-col img {
+    width: 50%;
+  }
+}
